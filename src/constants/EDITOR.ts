@@ -32,6 +32,7 @@ const LATEX_OPS = {
 const SIMPLE_IMAGE_OPS = {
   class: SimpleImage,
 };
+
 const TOOL_CONFIG = {
   header: HEADER_OPS,
   list: NESTED_LIST_OPS,

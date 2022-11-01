@@ -35,3 +35,8 @@ declare module "@editorjs/simple-image" {
   import SimpleImage from "@editorjs/simple-image";
   export = SimpleImage;
 }
+
+declare module "editorjs-drag-drop" {
+  import DragDrop from "editorjs-drag-drop";
+  export = DragDrop;
+}

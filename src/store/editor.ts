@@ -1,6 +1,7 @@
 import EditorJS, { OutputData } from "@editorjs/editorjs";
 import EDITOR from "@/constants/EDITOR";
 import Undo from "editorjs-undo";
+import DragDrop from "editorjs-drag-drop";
 
 let editor: EditorJS | null = null;
 export default {
@@ -11,6 +12,7 @@ export default {
       holder: holder,
       onReady: () => {
         new Undo({ editor });
+        new DragDrop(editor);
       },
       tools: EDITOR.TOOL_CONFIG,
       data: EDITOR.INIT_DATA,
