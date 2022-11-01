@@ -11,7 +11,8 @@ export default {
       tools: EDITOR.TOOL_CONFIG,
     }));
   },
-  getClearJson() {
-    return editor?.save();
+  async getClearJson() {
+    if (!editor) return null;
+    return await editor.save();
   },
 };
