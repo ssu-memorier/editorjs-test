@@ -10,3 +10,8 @@ declare module "@editorjs/header" {
   import Header from "@editorjs/header";
   export = Header;
 }
+
+declare module "@editorjs/nested-list" {
+  import NestedList from "@editorjs/nested-list";
+  export = NestedList;
+}

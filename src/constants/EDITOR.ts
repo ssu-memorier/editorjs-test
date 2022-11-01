@@ -1,3 +1,4 @@
+import NestedList from "@editorjs/nested-list";
 import Header from "@editorjs/header";
 
 const HEADER_OPS = {
@@ -9,8 +10,13 @@ const HEADER_OPS = {
   },
 };
 
+const NESTED_LIST_OPS = {
+  class: NestedList,
+  inlineToolbar: true,
+};
 const TOOL_CONFIG = {
   header: HEADER_OPS,
+  list: NESTED_LIST_OPS,
 };
 
-export default { HEADER_OPS, TOOL_CONFIG };
+export default { HEADER_OPS, NESTED_LIST_OPS, TOOL_CONFIG };
