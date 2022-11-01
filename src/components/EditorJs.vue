@@ -8,7 +8,8 @@ const editorJs = editor.createEditor("editorjs");
 </script>
 <style scoped>
 #editorjs {
-  width: calc(650px + 8rem);
+  max-width: calc(650px + 8rem);
+  width: 100%;
   max-height: 800px;
   overflow: auto;
   position: relative;
