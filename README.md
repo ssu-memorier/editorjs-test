@@ -39,3 +39,9 @@ _latex를 입력할 수 있습니다._
 
 원래는 위 모듈을 사용하려고 했지만, import에 문제가 있어(모듈자체에 export default가 없음, 잘못된 모듈인듯)
 모듈을 직접 만들어 사용함. 이는 나중에 별도의 레포를 파서 추가할 예정
+
+### @editorjs/simple-image
+
+https://github.com/editor-js/simple-image
+
+이미지 URL과 base64 이미지에 대해서만 동작합니다. 서버 업로드가 필요 없는 경우 사용할 수 있습니다.

@@ -30,3 +30,8 @@ declare module "@/modules/editorjs-latex" {
   import LaTeX from "@/modules/editorjs-latex";
   export = LaTeX;
 }
+
+declare module "@editorjs/simple-image" {
+  import SimpleImage from "@editorjs/simple-image";
+  export = SimpleImage;
+}

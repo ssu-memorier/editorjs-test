@@ -22,6 +22,7 @@
     "vue": "^3.2.41"
   },
   "devDependencies": {
+    "@editorjs/simple-image": "^1.4.1",
     "@types/editorjs__header": "^2.6.0",
     "@vitejs/plugin-vue": "^3.2.0",
     "typescript": "^4.6.4",
