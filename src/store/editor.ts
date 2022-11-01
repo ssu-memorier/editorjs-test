@@ -1,5 +1,6 @@
 import EditorJS, { OutputData } from "@editorjs/editorjs";
 import EDITOR from "@/constants/EDITOR";
+import Undo from "editorjs-undo";
 
 let editor: EditorJS | null = null;
 export default {
@@ -8,6 +9,9 @@ export default {
 
     return (editor = new EditorJS({
       holder: holder,
+      onReady: () => {
+        new Undo({ editor });
+      },
       tools: EDITOR.TOOL_CONFIG,
       data: EDITOR.INIT_DATA,
     }));

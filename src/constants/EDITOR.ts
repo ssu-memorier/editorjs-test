@@ -1,5 +1,6 @@
 import NestedList from "@editorjs/nested-list";
 import Header from "@editorjs/header";
+
 import init from "@/assets/init.json";
 
 const HEADER_OPS = {
