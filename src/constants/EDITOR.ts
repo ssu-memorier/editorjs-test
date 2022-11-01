@@ -1,5 +1,6 @@
 import NestedList from "@editorjs/nested-list";
 import Header from "@editorjs/header";
+import init from "@/assets/init.json";
 
 const HEADER_OPS = {
   class: Header,
@@ -19,4 +20,5 @@ const TOOL_CONFIG = {
   list: NESTED_LIST_OPS,
 };
 
-export default { HEADER_OPS, NESTED_LIST_OPS, TOOL_CONFIG };
+const INIT_DATA = init;
+export default { HEADER_OPS, NESTED_LIST_OPS, TOOL_CONFIG, INIT_DATA };

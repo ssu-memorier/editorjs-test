@@ -9,6 +9,7 @@ export default {
     return (editor = new EditorJS({
       holder: holder,
       tools: EDITOR.TOOL_CONFIG,
+      data: EDITOR.INIT_DATA,
     }));
   },
   async getClearJson() {
