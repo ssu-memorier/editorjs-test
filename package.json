@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@editorjs/editorjs": "^2.25.0",
@@ -14,6 +16,7 @@
     "@editorjs/nested-list": "^1.0.2",
     "editorjs-toggle-block": "^0.3.2",
     "editorjs-undo": "^2.0.11",
+    "gh-pages": "^4.0.0",
     "katex": "^0.16.3",
     "path": "^0.12.7",
     "vue": "^3.2.41"
