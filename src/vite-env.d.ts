@@ -20,3 +20,8 @@ declare module "editorjs-undo" {
   import Undo from "editorjs-undo";
   export = Undo;
 }
+
+declare module "editorjs-toggle-block" {
+  import ToggleBlock from "editorjs-toggle-block";
+  export = ToggleBlock;
+}

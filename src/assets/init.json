@@ -1,5 +1,5 @@
 {
-  "time": 1667274972700,
+  "time": 1667276236179,
   "blocks": [
     {
       "id": "vbsyRyyjwX",
@@ -43,6 +43,21 @@
           { "content": "next ordered list", "items": [] }
         ]
       }
+    },
+    {
+      "id": "B_CuavugoZ",
+      "type": "toggle",
+      "data": {
+        "text": "토글",
+        "status": "open",
+        "fk": "fk-a6d0a168-dcc1-4248-ade2-b99e3f7df757",
+        "items": 1
+      }
+    },
+    {
+      "id": "RtdzUgd5jk",
+      "type": "paragraph",
+      "data": { "text": "토글된 내용" }
     }
   ],
   "version": "2.25.0"
