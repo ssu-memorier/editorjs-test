@@ -1,7 +1,7 @@
 import NestedList from "@editorjs/nested-list";
 import Header from "@editorjs/header";
 import ToggleBlock from "editorjs-toggle-block";
-
+import LaTeX from "@/modules/editorjs-latex";
 import init from "@/assets/init.json";
 
 const HEADER_OPS = {
@@ -22,10 +22,17 @@ const TOGGLE_BLOCK_OPS = {
   class: ToggleBlock,
   inlineToolbar: true,
 };
+
+const LATEX_OPS = {
+  class: LaTeX,
+  shortcut: "CMD+SHIFT+M",
+};
+
 const TOOL_CONFIG = {
   header: HEADER_OPS,
   list: NESTED_LIST_OPS,
   toggle: TOGGLE_BLOCK_OPS,
+  latex: LATEX_OPS,
 };
 
 const INIT_DATA = init;
@@ -34,5 +41,6 @@ export default {
   NESTED_LIST_OPS,
   TOGGLE_BLOCK_OPS,
   TOOL_CONFIG,
+  LATEX_OPS,
   INIT_DATA,
 };

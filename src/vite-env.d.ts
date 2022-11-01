@@ -25,3 +25,8 @@ declare module "editorjs-toggle-block" {
   import ToggleBlock from "editorjs-toggle-block";
   export = ToggleBlock;
 }
+
+declare module "@/modules/editorjs-latex" {
+  import LaTeX from "@/modules/editorjs-latex";
+  export = LaTeX;
+}

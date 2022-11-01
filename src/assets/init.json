@@ -1,5 +1,5 @@
 {
-  "time": 1667276236179,
+  "time": 1667287740139,
   "blocks": [
     {
       "id": "vbsyRyyjwX",
@@ -58,6 +58,11 @@
       "id": "RtdzUgd5jk",
       "type": "paragraph",
       "data": { "text": "토글된 내용" }
+    },
+    {
+      "id": "7vp8kA4xg6",
+      "type": "latex",
+      "data": { "latex": "\\alpha + \\beta " }
     }
   ],
   "version": "2.25.0"
