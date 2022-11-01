@@ -1,4 +1,4 @@
-import EditorJS from "@editorjs/editorjs";
+import EditorJS, { OutputData } from "@editorjs/editorjs";
 import EDITOR from "@/constants/EDITOR";
 
 let editor: EditorJS | null = null;
@@ -14,5 +14,10 @@ export default {
   async getClearJson() {
     if (!editor) return null;
     return await editor.save();
+  },
+  async fromJson(json: OutputData) {
+    if (!editor) return;
+
+    editor.render(json);
   },
 };
