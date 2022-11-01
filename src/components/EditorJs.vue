@@ -3,8 +3,16 @@
 </template>
 <script setup lang="ts">
 import EditorJS from "@editorjs/editorjs";
+import editor from "@/store/editor";
+import EDITOR from "@/constants/EDITOR";
 
-const editor = new EditorJS({
+const editorJs = editor.createEditor({
   holder: "editorjs",
+  tools: EDITOR.TOOL_CONFIG,
 });
 </script>
+<style>
+#editorjs {
+  font-family: "Nanum Gothic", "Roboto", sans-serif;
+}
+</style>
