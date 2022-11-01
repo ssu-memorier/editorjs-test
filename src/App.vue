@@ -8,4 +8,6 @@
 <script setup lang="ts">
 import EditorJs from "@/components/EditorJs.vue";
 </script>
-<style scoped></style>
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&dispay=swap");
+</style>
