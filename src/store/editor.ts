@@ -1,19 +1,17 @@
 import EditorJS from "@editorjs/editorjs";
 import EDITOR from "@/constants/EDITOR";
 
-let clearJson = {};
-
+let editor: EditorJS | null = null;
 export default {
   createEditor(holder = "editorjs") {
-    return new EditorJS({
+    if (editor) return editor;
+
+    return (editor = new EditorJS({
       holder: holder,
       tools: EDITOR.TOOL_CONFIG,
-    });
+    }));
   },
   getClearJson() {
-    return clearJson;
-  },
-  setClearJson(json: object) {
-    clearJson = json;
+    return editor?.save();
   },
 };
